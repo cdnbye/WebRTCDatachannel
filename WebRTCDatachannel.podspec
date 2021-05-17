@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WebRTCDatachannel"
-  spec.version      = "0.0.1"
-  spec.summary      = "WebRTC with Datachannel only."
+  spec.version      = "0.1.0"
+  spec.summary      = "WebRTC framework for iOS, macOS and tvOS"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                       WebRTC with Datachannel only for iOS.
+                       WebRTC.xcframework for iOS, macOS and tvOS.
                    DESC
 
   spec.homepage     = "https://github.com/cdnbye/WebRTCDatachannel"
@@ -63,13 +63,12 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "10.0"
+#   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
+  spec.ios.deployment_target = "10.0"
+  spec.osx.deployment_target = "10.0"
+  spec.tvos.deployment_target = "10.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +89,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source_files  = "WebRTC", "WebRTC/**/*.{h,m}"
-  spec.source_files = 'WebRTC.framework/Headers/*.{h}'
-  spec.vendored_frameworks = 'WebRTC.framework'
+#   spec.source_files = 'WebRTC.xcframework/Headers/*.{h}'
+  spec.vendored_frameworks = 'WebRTC.xcframework'
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "WebRTC/**/*.h"
