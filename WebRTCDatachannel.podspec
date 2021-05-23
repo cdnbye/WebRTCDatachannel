@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WebRTCDatachannel"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "WebRTC framework for iOS, macOS and tvOS"
 
   # This description is used to generate tags and improve search results.
@@ -67,8 +67,8 @@ Pod::Spec.new do |spec|
 
   #  When using multiple platforms
   spec.ios.deployment_target = "10.0"
-  spec.osx.deployment_target = "10.0"
-  spec.tvos.deployment_target = "10.0"
+  spec.osx.deployment_target = "10.9"
+  spec.tvos.deployment_target = "10.2"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -121,6 +121,8 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
+
+  # spec.static_framework = true
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
